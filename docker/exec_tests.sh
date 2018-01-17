@@ -1,1 +1,1 @@
-docker-compose exec truffle npm test
+docker-compose exec truffle yarn run test:docker

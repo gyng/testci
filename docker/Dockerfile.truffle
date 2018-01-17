@@ -16,4 +16,4 @@ RUN yarn install --frozen-lockfile \
 
 COPY . /usr/src/app
 
-CMD yarn install && tail -f /dev/null 
+CMD ["tail", "-f", "/dev/null"]

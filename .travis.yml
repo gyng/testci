@@ -1,14 +1,14 @@
 sudo: required
 
-language: node_js
-node_js:
-  - "node"
-
-cache: yarn
+language: generic
 
 services:
   - docker
 
-script:
+before_install:
   - docker-compose up -d
-  - docker-compose exec truffle npm test:ci
+  - docker-compose ps
+  - docker ps -a
+
+script:
+  - docker-compose exec truffle yarn run test:docker

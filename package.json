@@ -6,7 +6,7 @@
     "lint": "yarn solium && yarn eslint",
     "solium:fix": "solium -d contracts --fix",
     "solium": "solium -d contracts",
-    "test:ci": "truffle test --network ci",
+    "test:docker": "truffle test --network docker",
     "test": "truffle test",
     "truffle": "truffle"
   },
