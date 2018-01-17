@@ -1,10 +1,20 @@
 {
   "scripts": {
-    "test": "truffle test",
-    "lint": "solium -d contracts",
-    "lint:fix": "solium -d contracts --fix"
+    "eslint:fix": "eslint . --ext .js --fix",
+    "eslint": "eslint . --ext .js",
+    "lint:fix": "solium:fix && eslint:fix",
+    "lint": "yarn solium && yarn eslint",
+    "solium:fix": "solium -d contracts --fix",
+    "solium": "solium -d contracts",
+    "test": "truffle test"
   },
   "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "prettier": "^1.10.2",
     "solium": "^1.1.2",
     "truffle": "^4.0.4"
   }
