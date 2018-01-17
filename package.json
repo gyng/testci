@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "truffle test"
+  },
+  "devDependencies": {
+    "truffle": "^4.0.4"
+  }
+}
