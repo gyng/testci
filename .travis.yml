@@ -13,4 +13,5 @@ before_install:
   - docker ps -a
 
 script:
+  - yarn run lint
   - yarn run test

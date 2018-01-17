@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "test": "truffle test"
+    "test": "truffle test",
+    "lint": "solium -d contracts",
+    "lint:fix": "solium -d contracts --fix"
   },
   "devDependencies": {
+    "solium": "^1.1.2",
     "truffle": "^4.0.4"
   }
 }

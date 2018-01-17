@@ -1,4 +1,7 @@
+/* solium-disable security/no-assign-params */
+
 pragma solidity ^0.4.16;
+
 
 /// @title Voting with delegation.
 contract Ballot {
