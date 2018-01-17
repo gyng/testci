@@ -4,6 +4,11 @@ module.exports = {
       host: "localhost",
       port: 8545,
       network_id: "*" // Match any network id
+    },
+    ci: {
+      host: "ganache",
+      port: 8545,
+      network_id: "*" // Match any network id
     }
   }
 };
